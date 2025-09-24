@@ -1,0 +1,1 @@
+En este directorio debe ir el código que se realizó para el ESP32 usando herramientas de IA utilizando la técnica de Vibecoding
