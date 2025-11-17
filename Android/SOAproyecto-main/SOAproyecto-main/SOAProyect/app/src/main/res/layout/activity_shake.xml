@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#f0f4f8"
+    tools:context=".SensorActivity">
+
+    <!-- Título de la funcionalidad -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Control de Cuna por Agitación"
+        android:textSize="24sp"
+        android:textColor="#333333"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp" />
+
+    <ImageView
+        android:id="@+id/img_shaker_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="Icono de agitación"
+        android:src="@drawable/ic_shaker" />
+    <!-- Área de estado para mostrar mensajes de la aplicación -->
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Inicializando sensores..."
+        android:textSize="18sp"
+        android:textColor="#0066cc"
+        android:padding="16dp"
+        android:gravity="center"
+        android:background="@drawable/rounded_background"
+        android:elevation="4dp"
+        android:layout_marginHorizontal="16dp"/>
+
+    <!--
+      MODIFICACIÓN:
+      Se añade el botón para regresar a la MainActivity.
+    -->
+    <Button
+        android:id="@+id/btn_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volver al Menú Principal"
+        android:layout_marginTop="32dp" />
+
+</LinearLayout>
